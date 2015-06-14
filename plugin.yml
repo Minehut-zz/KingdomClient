@@ -1,0 +1,4 @@
+name: KingdomClient
+version: 1.0
+main: com.minehut.kingdomclient.KingdomClient
+depend: [Core, Commons, Status]
