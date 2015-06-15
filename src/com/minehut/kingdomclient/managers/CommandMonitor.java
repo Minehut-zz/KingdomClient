@@ -111,6 +111,11 @@ public class CommandMonitor implements Listener {
 		addDisabledCommand("seen");
 		addDisabledCommand("/eseen");
 		addDisabledCommand("/essentials:seen");
+		addDisabledCommand("/banip");
+		addDisabledCommand("/ebanip");
+		addDisabledCommand("/essentials:banip");
+		addDisabledCommand("/ipban");
+		addDisabledCommand("/ip");
 
 		/* Crashes People */
 		addDisabledCommand("/setblock ~ ~ ~ minecraft:standing_sign 0 replace {Text1:\"{translate:/\"translation.text.invalid/\"}\"}");
