@@ -72,7 +72,9 @@ public abstract class Plugin {
 
         try {
             FileUtils.copyFile(jarSource, jarPath);
-            FileUtils.copyDirectory(configSource, configPath);
+            if(configSource.exists()) {
+                FileUtils.copyDirectory(configSource, configPath);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

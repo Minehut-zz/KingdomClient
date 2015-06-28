@@ -81,6 +81,7 @@ public class CommandMonitor implements Listener {
     }
     
     {
+		/* Ways to screw with Kingdom Owner */
     	addPunishCommand("/ban");
     	addPunishCommand("/minecraft:ban");
 		addPunishCommand("/eban");

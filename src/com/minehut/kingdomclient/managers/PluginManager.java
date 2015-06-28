@@ -66,6 +66,14 @@ public class PluginManager implements Listener {
         this.plugins.add(new ChestShopPlugin());
         this.plugins.add(new KitAdderPlugin());
         this.plugins.add(new FactionsPlugin());
+        this.plugins.add(new PrisonMinesPlugin());
+        this.plugins.add(new GriefPreventionPlugin());
+        this.plugins.add(new LuckyBlocksPlugin());
+        this.plugins.add(new TogglePvpPlugin());
+        this.plugins.add(new NoCheatPlusPlugin());
+        this.plugins.add(new MagicPlugin());
+        this.plugins.add(new CorpsesPlugin());
+        this.plugins.add(new CombatTagPlugin());
 
         /* Maps */
         this.maps.add(new DefaultMap());
