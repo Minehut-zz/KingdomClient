@@ -1,6 +1,6 @@
 package com.minehut.kingdomclient.maps;
 
-import com.minehut.commons.common.chat.C;
+import com.minehut.core.util.common.chat.C;
 import com.minehut.core.player.Rank;
 import org.bukkit.Material;
 

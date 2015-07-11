@@ -1,6 +1,6 @@
 package com.minehut.kingdomclient.plugins;
 
-import com.minehut.commons.common.items.ItemStackFactory;
+import com.minehut.core.util.common.items.ItemStackFactory;
 import com.minehut.kingdomclient.Plugin;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

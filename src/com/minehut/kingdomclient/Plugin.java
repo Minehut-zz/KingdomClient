@@ -1,8 +1,8 @@
 package com.minehut.kingdomclient;
 
-import com.minehut.commons.common.chat.C;
-import com.minehut.commons.common.items.EnchantGlow;
-import com.minehut.commons.common.items.ItemStackFactory;
+import com.minehut.core.util.common.chat.C;
+import com.minehut.core.util.common.items.EnchantGlow;
+import com.minehut.core.util.common.items.ItemStackFactory;
 import com.minehut.core.player.Rank;
 import org.apache.commons.io.FileUtils;
 import org.bukkit.Material;
@@ -42,8 +42,11 @@ public abstract class Plugin {
         this.jarSource = new File("/home/plugin-repo/" + jarName);
         this.configSource = new File("/home/plugin-repo/" + configName);
 
-        this.jarPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + jarName);
-        this.configPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + configName);
+        this.jarPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + jarName);
+        this.configPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + configName);
+
+//        this.jarPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + jarName);
+//        this.configPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + configName);
 
         this.installed = InstallState.no;
     }
@@ -60,8 +63,8 @@ public abstract class Plugin {
         this.jarSource = new File("/home/plugin-repo/" + jarName);
         this.configSource = new File("/home/plugin-repo/" + configName);
 
-        this.jarPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + jarName);
-        this.configPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + configName);
+        this.jarPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + jarName);
+        this.configPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + configName);
 
         this.installed = InstallState.no;
     }

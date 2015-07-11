@@ -11,6 +11,6 @@ import java.util.Arrays;
 public class CorpsesPlugin extends Plugin {
 
     public CorpsesPlugin() {
-        super("Corpses", "Corpses.jar", "Corpses", Material.DROPPER, Arrays.asList("Corpses is a plugin to enable dead bodies on your server when you die!"));
+        super("Corpses", "Corpses.jar", "Corpses", Material.DROPPER, Arrays.asList("Corpses is a plugin to enable dead bodies", "on your server when you die!"));
     }
 }

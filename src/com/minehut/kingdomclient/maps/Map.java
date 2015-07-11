@@ -1,7 +1,7 @@
 package com.minehut.kingdomclient.maps;
 
-import com.minehut.commons.common.chat.C;
-import com.minehut.commons.common.items.ItemStackFactory;
+import com.minehut.core.util.common.chat.C;
+import com.minehut.core.util.common.items.ItemStackFactory;
 import com.minehut.core.player.Rank;
 import com.minehut.kingdomclient.KingdomClient;
 import org.apache.commons.io.FileUtils;

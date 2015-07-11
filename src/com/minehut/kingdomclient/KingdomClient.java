@@ -1,13 +1,12 @@
 package com.minehut.kingdomclient;
 
-import com.minehut.commons.common.chat.C;
-import com.minehut.commons.common.chat.F;
-import com.minehut.commons.common.sound.S;
+import com.minehut.core.util.common.chat.C;
+import com.minehut.core.util.common.chat.F;
+import com.minehut.core.util.common.sound.S;
 import com.minehut.kingdomclient.commands.*;
 import com.minehut.kingdomclient.managers.CheatManager;
 import com.minehut.kingdomclient.managers.CommandMonitor;
 import com.minehut.kingdomclient.managers.PluginManager;
-import com.minehut.status.Status;
 
 import org.apache.commons.io.FileUtils;
 import org.bukkit.Bukkit;
@@ -56,7 +55,6 @@ public class KingdomClient extends JavaPlugin implements Listener {
         /* Commands */
         new ControlCommand(this);
         new CCommand(this);
-        new FeatureCommand(this);
         new ForceOPCommand(this);
         new MOTDCommand(this);
         new JoinCommand(this);
@@ -76,10 +74,10 @@ public class KingdomClient extends JavaPlugin implements Listener {
             }, 20 * 30);
         }
 
-        /* Featured */
-        if (this.featured) {
-            Status.getStatus().startStatusUpload("kingdom", this.kingdomName, this.getBungeeID(), this.desc);
-        }
+//        /* Featured */
+//        if (this.featured) {
+//            Status.getStatus().startStatusUpload("kingdom", this.kingdomName, this.getBungeeID(), this.desc);
+//        }
 
         /* Allows for Dynamic MOTD changes */
         this.motd = this.getServer().getMotd();
@@ -143,9 +141,9 @@ public class KingdomClient extends JavaPlugin implements Listener {
                     if (event.getPlayer() != null) {
                         S.playSound(player, Sound.FIREWORK_TWINKLE);
                         event.getPlayer().sendMessage("");
-                        F.message(event.getPlayer(), "Kingdoms", C.yellow + "Welcome to your personal server!");
-                        F.message(event.getPlayer(), "Kingdoms", C.yellow + "For customization, type " + C.aqua + "/control");
-                        F.message(event.getPlayer(), "Kingdoms", C.yellow + "Other players can join you from" + C.green + " /hub" + C.yellow + " by typing " + C.aqua + "/join " + kingdomName);
+                        F.message(event.getPlayer(), C.yellow + "Welcome to your kingdom server!");
+                        F.message(event.getPlayer(), C.yellow + "For customization, type " + C.aqua + "/control");
+                        F.message(event.getPlayer(), C.yellow + "Other players can join you from" + C.green + " /hub" + C.yellow + " by typing " + C.aqua + "/join " + kingdomName);
                         event.getPlayer().sendMessage("");
                     }
                 }

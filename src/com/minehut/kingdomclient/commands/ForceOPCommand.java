@@ -1,6 +1,6 @@
 package com.minehut.kingdomclient.commands;
 
-import com.minehut.commons.common.chat.C;
+import com.minehut.core.util.common.chat.C;
 import com.minehut.core.command.Command;
 import com.minehut.core.player.Rank;
 import org.bukkit.entity.Player;

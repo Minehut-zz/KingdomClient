@@ -1,8 +1,8 @@
 package com.minehut.kingdomclient.commands;
 
-import com.minehut.commons.common.chat.C;
-import com.minehut.commons.common.chat.F;
-import com.minehut.commons.common.sound.S;
+import com.minehut.core.util.common.chat.C;
+import com.minehut.core.util.common.chat.F;
+import com.minehut.core.util.common.sound.S;
 import com.minehut.core.command.Command;
 import com.minehut.core.player.Rank;
 import org.bukkit.entity.Player;
@@ -24,7 +24,7 @@ public class JoinCommand extends Command {
 
         S.click(player);
         player.sendMessage("");
-        F.message(player, "Kingdoms", C.yellow + "This command is only usable in the " + C.green + "/hub");
+        F.message(player, C.yellow + "This command is only usable in the " + C.green + "/hub");
         player.sendMessage("");
 
         return true;

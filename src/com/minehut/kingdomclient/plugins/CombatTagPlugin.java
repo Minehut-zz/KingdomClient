@@ -11,6 +11,6 @@ import java.util.Arrays;
 public class CombatTagPlugin extends Plugin {
 
     public CombatTagPlugin() {
-        super("Combat Tag", "CombatTag.jar", "CombatTag", Material.NAME_TAG, Arrays.asList("The essential PvP plugin that prevents hit-n-quit players."));
+        super("Combat Tag", "CombatTag.jar", "CombatTag", Material.NAME_TAG, Arrays.asList("The essential PvP plugin that", "prevents hit-n-quit players."));
     }
 }

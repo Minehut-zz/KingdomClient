@@ -1,9 +1,9 @@
 package com.minehut.kingdomclient.managers;
 
-import com.minehut.commons.common.chat.C;
-import com.minehut.commons.common.chat.F;
-import com.minehut.commons.common.items.ItemStackFactory;
-import com.minehut.commons.common.sound.S;
+import com.minehut.core.util.common.chat.C;
+import com.minehut.core.util.common.chat.F;
+import com.minehut.core.util.common.items.ItemStackFactory;
+import com.minehut.core.util.common.sound.S;
 import com.minehut.core.Core;
 import com.minehut.core.player.PlayerInfo;
 import com.minehut.kingdomclient.InstallState;
@@ -53,6 +53,8 @@ public class PluginManager implements Listener {
         this.maps = new ArrayList<>();
 
         /* Plugins */
+        this.plugins.add(new GroupManagerPlugin());
+        this.plugins.add(new PexPlugin());
         this.plugins.add(new TrailsGUIPlugin());
         this.plugins.add(new CrackShotPlugin());
         this.plugins.add(new EssentialsPlugin());
@@ -60,7 +62,6 @@ public class PluginManager implements Listener {
         this.plugins.add(new EssentialsChatPlugin());
         this.plugins.add(new WorldEditPlugin());
         this.plugins.add(new WorldGuardPlugin());
-        this.plugins.add(new PexPlugin());
         this.plugins.add(new SpecifiedBreakPlugin());
         this.plugins.add(new McMMOPlugin());
         this.plugins.add(new ChestShopPlugin());
@@ -68,12 +69,16 @@ public class PluginManager implements Listener {
         this.plugins.add(new FactionsPlugin());
         this.plugins.add(new PrisonMinesPlugin());
         this.plugins.add(new GriefPreventionPlugin());
-        this.plugins.add(new LuckyBlocksPlugin());
         this.plugins.add(new TogglePvpPlugin());
         this.plugins.add(new NoCheatPlusPlugin());
         this.plugins.add(new MagicPlugin());
         this.plugins.add(new CorpsesPlugin());
         this.plugins.add(new CombatTagPlugin());
+        this.plugins.add(new CitizensPlugin());
+        this.plugins.add(new LWCPlugin());
+        this.plugins.add(new ClearLagPlugin());
+        this.plugins.add(new ChatFilterPlugin());
+        this.plugins.add(new TimPlugin());
 
         /* Maps */
         this.maps.add(new DefaultMap());
@@ -195,8 +200,8 @@ public class PluginManager implements Listener {
             	}
                 S.playSound(Sound.FIREWORK_TWINKLE);
             	Bukkit.getServer().broadcastMessage("");
-                F.broadcast("Kingdoms", C.red + C.bold + "WARNING: " + C.aqua + player.getName() + C.white + " has scheduled a " + C.red + "World Reset");
-                F.broadcast("Kingdoms", "Complete this process by typing " + C.aqua + "/stop");
+                F.broadcast(C.red + C.bold + "WARNING: " + C.aqua + player.getName() + C.white + " has scheduled a " + C.red + "World Reset");
+                F.broadcast("Complete this process by typing " + C.aqua + "/stop");
                 Bukkit.getServer().broadcastMessage("");
                 //Bukkit.getServer().shutdown();
             }
@@ -278,8 +283,8 @@ public class PluginManager implements Listener {
 
                         S.playSound(Sound.FIREWORK_TWINKLE);
                         Bukkit.getServer().broadcastMessage("");
-                        F.broadcast("Kingdoms", C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
-                        F.broadcast("Kingdoms", "This will take effect after restarting with " + C.aqua + "/stop");
+                        F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
+                        F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
                         Bukkit.getServer().broadcastMessage("");
 
                         updatePluginPage();
@@ -289,8 +294,8 @@ public class PluginManager implements Listener {
 
                         S.playSound(Sound.FIREWORK_TWINKLE);
                         Bukkit.getServer().broadcastMessage("");
-                        F.broadcast("Kingdoms", C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
-                        F.broadcast("Kingdoms", "This will take effect after restarting with " + C.aqua + "/stop");
+                        F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
+                        F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
                         Bukkit.getServer().broadcastMessage("");
 
                         updatePluginPage();
@@ -300,8 +305,8 @@ public class PluginManager implements Listener {
 
                         S.playSound(Sound.FIREWORK_TWINKLE);
                         Bukkit.getServer().broadcastMessage("");
-                        F.broadcast("Kingdoms", C.red + C.bold + player.getName() + C.yellow + " has" + C.green + " installed " + C.aqua + plugin.getDisplayName());
-                        F.broadcast("Kingdoms", "This will take effect after restarting with " + C.aqua + "/stop");
+                        F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.green + " installed " + C.aqua + plugin.getDisplayName());
+                        F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
                         Bukkit.getServer().broadcastMessage("");
 
                         updatePluginPage();

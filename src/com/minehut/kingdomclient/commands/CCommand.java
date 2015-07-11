@@ -1,7 +1,7 @@
 package com.minehut.kingdomclient.commands;
 
-import com.minehut.commons.common.chat.C;
-import com.minehut.commons.common.sound.S;
+import com.minehut.core.util.common.chat.C;
+import com.minehut.core.util.common.sound.S;
 import com.minehut.core.Core;
 import com.minehut.core.command.Command;
 import com.minehut.core.player.Rank;
