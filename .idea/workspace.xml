@@ -7,40 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf8abb44-6a27-439e-b626-e906e9725f89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/ChatFilterPlugin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/CitizensPlugin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/ClearLagPlugin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/GroupManagerPlugin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/LWCPlugin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/QuestsPlugin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/TimPlugin.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/FeatureCommand.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/CombatTagPlugin.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/CombatTagPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/CorpsesPlugin.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/CorpsesPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/MagicPlugin.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/MagicPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/PexPlugin.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/plugins/PexPlugin.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/status/KingdomStatusUploader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient$1.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient$2.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient$3.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/KingdomClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/Plugin.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/Plugin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/managers/PluginManager.class" afterPath="$PROJECT_DIR$/out/production/KingdomClient/com/minehut/kingdomclient/managers/PluginManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/CCommand.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/CCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/CombatTagPlugin.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/CombatTagPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ControlCommand.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ControlCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/CorpsesPlugin.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/CorpsesPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/DefaultMap.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/DefaultMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ForceOPCommand.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ForceOPCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/JoinCommand.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/JoinCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KingdomClient.iml" afterPath="$PROJECT_DIR$/KingdomClient.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/MOTDCommand.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/MOTDCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/MagicPlugin.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/MagicPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/Map.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/PexPlugin.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/PexPlugin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/Plugin.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/Plugin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/PluginManager.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/PluginManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/RenameCommand.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/RenameCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ResetCommand.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ResetCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/TrailsGUIPlugin.java" afterPath="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/TrailsGUIPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/core.xml" afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/kingdomclient.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/kingdomclient.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.yml" afterPath="$PROJECT_DIR$/plugin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KingdomClient.iws" />
@@ -63,36 +43,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GroupManagerPlugin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/GroupManagerPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PexPlugin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/PexPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestsPlugin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/QuestsPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TrailsGUIPlugin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/TrailsGUIPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,23 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/DefaultMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.375">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResetCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ResetCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,10 +83,42 @@
         <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="143" column="80" selection-start-line="143" selection-start-column="80" selection-end-line="143" selection-end-column="80" />
+              <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InstallState.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/InstallState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.22058824">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PluginManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/PluginManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/Plugin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,11 +135,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LWCPlugin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/LWCPlugin.java">
+      <file leaf-file-name="KingdomStatusUploader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/status/KingdomStatusUploader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="28" />
+              <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -196,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/Plugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/InstallStatus.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/InstallState.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/CrackShotPlugin.java" />
@@ -214,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/Map.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/FactionsPlugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/DotaMap.java" />
-        <option value="$PROJECT_DIR$/plugin.yml" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/McMMOPlugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/CommandMonitor.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/PrisonMinesPlugin.java" />
@@ -229,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/CombatTagPlugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/MagicPlugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/TimPlugin.java" />
-        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/PluginManager.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/CCommand.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ControlCommand.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/FeatureCommand.java" />
@@ -238,8 +217,6 @@
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/JoinCommand.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/RenameCommand.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/commands/ResetCommand.java" />
-        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java" />
-        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/Plugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/LWCPlugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/GroupManagerPlugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/PexPlugin.java" />
@@ -247,6 +224,11 @@
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/TrailsGUIPlugin.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/Map.java" />
         <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/DefaultMap.java" />
+        <option value="$PROJECT_DIR$/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java" />
+        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/PluginManager.java" />
+        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/Plugin.java" />
+        <option value="$PROJECT_DIR$/src/com/minehut/kingdomclient/status/KingdomStatusUploader.java" />
       </list>
     </option>
   </component>
@@ -261,9 +243,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
+    <option name="x" value="52" />
     <option name="y" value="23" />
-    <option name="width" value="1225" />
+    <option name="width" value="1228" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -290,7 +272,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -346,29 +327,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KingdomClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KingdomClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kingdomclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maps" />
+              <option name="myItemId" value="status" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,25 +363,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kingdomclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/minehut/output/core.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jars/mongo-java-driver-2.13.1.jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
@@ -430,6 +382,9 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.minehut.kingdomclient.plugins" />
       <recent name="com.minehut.kingdomclient.commands" />
@@ -620,12 +575,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="23" width="1225" height="777" extended-state="0" />
+    <frame x="52" y="23" width="1228" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32768363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -633,12 +587,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3877551" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25325733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32750583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -647,6 +602,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.yml" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -681,13 +639,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/CommandMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -775,24 +726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/InstallState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/plugins/FactionsPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -807,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="124" selection-start-line="13" selection-start-column="124" selection-end-line="13" selection-end-column="124" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,17 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/PluginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="330" column="8" selection-start-line="330" selection-start-column="8" selection-end-line="330" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,9 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,11 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,9 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,29 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="143" column="80" selection-start-line="143" selection-start-column="80" selection-end-line="143" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/Plugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,7 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,11 +951,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/maps/DefaultMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/managers/PluginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/Plugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/KingdomClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/status/KingdomStatusUploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/minehut/kingdomclient/InstallState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22058824">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

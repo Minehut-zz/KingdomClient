@@ -8,6 +8,7 @@ import com.minehut.kingdomclient.managers.CheatManager;
 import com.minehut.kingdomclient.managers.CommandMonitor;
 import com.minehut.kingdomclient.managers.PluginManager;
 
+import com.minehut.kingdomclient.status.KingdomStatusUploader;
 import org.apache.commons.io.FileUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
@@ -38,6 +39,8 @@ public class KingdomClient extends JavaPlugin implements Listener {
     private boolean featured;
     private String desc;
     private String motd;
+
+    private KingdomStatusUploader kingdomStatusUploader;
 
     @Override
     public void onEnable() {
@@ -74,13 +77,11 @@ public class KingdomClient extends JavaPlugin implements Listener {
             }, 20 * 30);
         }
 
-//        /* Featured */
-//        if (this.featured) {
-//            Status.getStatus().startStatusUpload("kingdom", this.kingdomName, this.getBungeeID(), this.desc);
-//        }
-
         /* Allows for Dynamic MOTD changes */
         this.motd = this.getServer().getMotd();
+
+        /* Upload Status */
+        this.kingdomStatusUploader = new KingdomStatusUploader(this);
     }
 
     @Override

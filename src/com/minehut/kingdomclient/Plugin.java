@@ -42,11 +42,11 @@ public abstract class Plugin {
         this.jarSource = new File("/home/plugin-repo/" + jarName);
         this.configSource = new File("/home/plugin-repo/" + configName);
 
-        this.jarPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + jarName);
-        this.configPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + configName);
+//        this.jarPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + jarName);
+//        this.configPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + configName);
 
-//        this.jarPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + jarName);
-//        this.configPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + configName);
+        this.jarPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + jarName);
+        this.configPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + configName);
 
         this.installed = InstallState.no;
     }
@@ -63,8 +63,8 @@ public abstract class Plugin {
         this.jarSource = new File("/home/plugin-repo/" + jarName);
         this.configSource = new File("/home/plugin-repo/" + configName);
 
-        this.jarPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + jarName);
-        this.configPath = new File("/home/kds/" + KingdomClient.getPlugin().getOwnerUUID().toString() + "/kingdom0/plugins/" + configName);
+        this.jarPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + jarName);
+        this.configPath = new File("/home/kingdoms/kingdom" + Integer.toString(KingdomClient.getPlugin().getKingdomID()) + "/plugins/" + configName);
 
         this.installed = InstallState.no;
     }

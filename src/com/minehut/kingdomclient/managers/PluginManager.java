@@ -102,215 +102,212 @@ public class PluginManager implements Listener {
     public void onPageClick(InventoryClickEvent event) {
         Player player = (Player) event.getWhoClicked();
 
-        if (event.getInventory().getName().equalsIgnoreCase("Home")) {
-            S.click(player);
-            event.setCancelled(true);
+        if (KingdomClient.getPlugin().getOwnerUUID().toString().equalsIgnoreCase(player.getUniqueId().toString())) {
+
+            if (event.getInventory().getName().equalsIgnoreCase("Home")) {
+                S.click(player);
+                event.setCancelled(true);
 
              /* Empty Slot Click */
-            if(event.getCurrentItem().getType() == null) return;
+                if (event.getCurrentItem().getType() == null) return;
 
             /* Plugins Button */
-            if (event.getCurrentItem().getType() == Material.MINECART) {
-                player.openInventory(this.pluginPage);
-            }
+                if (event.getCurrentItem().getType() == Material.MINECART) {
+                    player.openInventory(this.pluginPage);
+                }
 
              /* Maps Button */
-            if (event.getCurrentItem().getType() == Material.PAPER) {
-                player.openInventory(this.mapPage);
-            }
+                if (event.getCurrentItem().getType() == Material.PAPER) {
+                    player.openInventory(this.mapPage);
+                }
             
             /* Server Properties Button */
-            if (event.getCurrentItem().getType() == Material.COMMAND) {
-                player.openInventory(this.serverProperties);
-            }
+                if (event.getCurrentItem().getType() == Material.COMMAND) {
+                    player.openInventory(this.serverProperties);
+                }
             
             /* Shutdown Button */
-            if (event.getCurrentItem().getType() == Material.LAVA_BUCKET) {
-                player.openInventory(this.restartConfirmation);
-            }
-        } else if(event.getInventory().getName().equalsIgnoreCase("Server Properties")) {
-            S.click(player);
-        	event.setCancelled(true);
+                if (event.getCurrentItem().getType() == Material.LAVA_BUCKET) {
+                    player.openInventory(this.restartConfirmation);
+                }
+            } else if (event.getInventory().getName().equalsIgnoreCase("Server Properties")) {
+                S.click(player);
+                event.setCancelled(true);
             /* Empty Slot Click */
-            if(event.getCurrentItem().getType() == null) return;
-            
-            if (event.getCurrentItem().getType() == Material.STONE) {
-                //TODO: Set world type to default
-            	this.updateServerPropertiesString(KingdomClient.getPlugin().getKingdomID(), "level-type", "DEFAULT");
-                player.closeInventory();
-                player.sendMessage("");
-                player.sendMessage(C.green + "Successfully set world type to " + C.aqua + "DEFAULT");
-                player.sendMessage(C.white + "Reset your world for this to take effect.");
-                player.sendMessage("");
-            } else
-            if (event.getCurrentItem().getType() == Material.GRASS) {
-            	//TODO: Set world type to flatland
-            	this.updateServerPropertiesString(KingdomClient.getPlugin().getKingdomID(), "level-type", "FLAT");
-                player.closeInventory();
-                player.sendMessage("");
-                player.sendMessage(C.green + "Successfully set world type to " + C.aqua + "FLAT");
-                player.sendMessage(C.white + "Reset your world for this to take effect.");
-                player.sendMessage("");
-            } else
-            if (event.getCurrentItem().getType() == Material.SKULL_ITEM) {
-            	//TODO: Enable hardcore mode
-            	player.sendMessage(C.red + "That feature is coming soon!");
-                player.closeInventory();
-            } else
-            if (event.getCurrentItem().getType() == Material.TNT) {
-            	//TODO: Create a reset action file
-            	player.openInventory(this.resetConfirmation);
-            }
-            else if (event.getCurrentItem().getType() == Material.ARROW) {
-                player.openInventory(this.homePage);
-            }
+                if (event.getCurrentItem().getType() == null) return;
 
-        } else if (event.getInventory().getName().equalsIgnoreCase("Shutdown Confirmation")) {
-            S.click(player);
-            event.setCancelled(true);
+                if (event.getCurrentItem().getType() == Material.STONE) {
+                    //TODO: Set world type to default
+                    this.updateServerPropertiesString(KingdomClient.getPlugin().getKingdomID(), "level-type", "DEFAULT");
+                    player.closeInventory();
+                    player.sendMessage("");
+                    player.sendMessage(C.green + "Successfully set world type to " + C.aqua + "DEFAULT");
+                    player.sendMessage(C.white + "Reset your world for this to take effect.");
+                    player.sendMessage("");
+                } else if (event.getCurrentItem().getType() == Material.GRASS) {
+                    //TODO: Set world type to flatland
+                    this.updateServerPropertiesString(KingdomClient.getPlugin().getKingdomID(), "level-type", "FLAT");
+                    player.closeInventory();
+                    player.sendMessage("");
+                    player.sendMessage(C.green + "Successfully set world type to " + C.aqua + "FLAT");
+                    player.sendMessage(C.white + "Reset your world for this to take effect.");
+                    player.sendMessage("");
+                } else if (event.getCurrentItem().getType() == Material.SKULL_ITEM) {
+                    //TODO: Enable hardcore mode
+                    player.sendMessage(C.red + "That feature is coming soon!");
+                    player.closeInventory();
+                } else if (event.getCurrentItem().getType() == Material.TNT) {
+                    //TODO: Create a reset action file
+                    player.openInventory(this.resetConfirmation);
+                } else if (event.getCurrentItem().getType() == Material.ARROW) {
+                    player.openInventory(this.homePage);
+                }
+
+            } else if (event.getInventory().getName().equalsIgnoreCase("Shutdown Confirmation")) {
+                S.click(player);
+                event.setCancelled(true);
 
             /* Empty Slot Click */
-            if(event.getCurrentItem().getType() == null) return;
+                if (event.getCurrentItem().getType() == null) return;
 
             /* Plugins Button */
-            if (event.getCurrentItem().getType() == Material.EMERALD_BLOCK) {
-                Bukkit.getServer().shutdown();
-            }
-            else if (event.getCurrentItem().getType() == Material.REDSTONE_BLOCK) {
-                player.closeInventory();
-            }
+                if (event.getCurrentItem().getType() == Material.EMERALD_BLOCK) {
+                    Bukkit.getServer().shutdown();
+                } else if (event.getCurrentItem().getType() == Material.REDSTONE_BLOCK) {
+                    player.closeInventory();
+                }
 
-        } else if (event.getInventory().getName().equalsIgnoreCase("Reset Confirmation")) {
-            S.click(player);
-            event.setCancelled(true);
+            } else if (event.getInventory().getName().equalsIgnoreCase("Reset Confirmation")) {
+                S.click(player);
+                event.setCancelled(true);
             /* Empty Slot Click */
-            if(event.getCurrentItem().getType() == null) return;
-            if (event.getCurrentItem().getType() == Material.EMERALD_BLOCK) {
-            	File actionFolder = new File("/home/kingdoms/kingdom" + KingdomClient.getPlugin().getKingdomID() + "/actions");
-            	if (!actionFolder.exists()) {
-            		actionFolder.mkdir();
-            	}
-            	File actionFile = new File(actionFolder.getAbsolutePath() + "/resetmap.action");
-            	if (!actionFile.exists()) {
-            		try {
-						actionFile.createNewFile();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-            	}
-                S.playSound(Sound.FIREWORK_TWINKLE);
-            	Bukkit.getServer().broadcastMessage("");
-                F.broadcast(C.red + C.bold + "WARNING: " + C.aqua + player.getName() + C.white + " has scheduled a " + C.red + "World Reset");
-                F.broadcast("Complete this process by typing " + C.aqua + "/stop");
-                Bukkit.getServer().broadcastMessage("");
-                //Bukkit.getServer().shutdown();
-            }
-            else if (event.getCurrentItem().getType() == Material.REDSTONE_BLOCK) {
-                player.closeInventory();
-            }
+                if (event.getCurrentItem().getType() == null) return;
+                if (event.getCurrentItem().getType() == Material.EMERALD_BLOCK) {
+                    File actionFolder = new File("/home/kingdoms/kingdom" + KingdomClient.getPlugin().getKingdomID() + "/actions");
+                    if (!actionFolder.exists()) {
+                        actionFolder.mkdir();
+                    }
+                    File actionFile = new File(actionFolder.getAbsolutePath() + "/resetmap.action");
+                    if (!actionFile.exists()) {
+                        try {
+                            actionFile.createNewFile();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    S.playSound(Sound.FIREWORK_TWINKLE);
+                    Bukkit.getServer().broadcastMessage("");
+                    F.broadcast(C.red + C.bold + "WARNING: " + C.aqua + player.getName() + C.white + " has scheduled a " + C.red + "World Reset");
+                    F.broadcast("Complete this process by typing " + C.aqua + "/stop");
+                    Bukkit.getServer().broadcastMessage("");
+                    //Bukkit.getServer().shutdown();
+                } else if (event.getCurrentItem().getType() == Material.REDSTONE_BLOCK) {
+                    player.closeInventory();
+                }
 
-        } else if (event.getInventory().getName().equalsIgnoreCase("Maps")) {
-            S.click(player);
-            event.setCancelled(true);
+            } else if (event.getInventory().getName().equalsIgnoreCase("Maps")) {
+                S.click(player);
+                event.setCancelled(true);
 
             /* Empty Slot Click */
-            if (event.getCurrentItem() == null) return;
-            if (event.getCurrentItem().getItemMeta() == null) return;
-            if (event.getCurrentItem().getItemMeta().getDisplayName() == null) return;
+                if (event.getCurrentItem() == null) return;
+                if (event.getCurrentItem().getItemMeta() == null) return;
+                if (event.getCurrentItem().getItemMeta().getDisplayName() == null) return;
 
             /* Home Page Icon */
-            if (event.getCurrentItem().getType() == Material.ARROW) {
-                player.openInventory(this.homePage);
-                return;
-            }
+                if (event.getCurrentItem().getType() == Material.ARROW) {
+                    player.openInventory(this.homePage);
+                    return;
+                }
 
             /* Find clicked map */
-            for (Map map : this.maps) {
-                if (map.getItem().getItemMeta().getDisplayName().equalsIgnoreCase(event.getCurrentItem().getItemMeta().getDisplayName())) {
-                    PlayerInfo playerInfo = Core.getInstance().getPlayerInfo(player);
+                for (Map map : this.maps) {
+                    if (map.getItem().getItemMeta().getDisplayName().equalsIgnoreCase(event.getCurrentItem().getItemMeta().getDisplayName())) {
+                        PlayerInfo playerInfo = Core.getInstance().getPlayerInfo(player);
 
                     /* Check permissions */
-                    if (!playerInfo.getRank().has(player, map.getRequiredRank(), false)) {
-                        player.sendMessage("");
-                        player.sendMessage("This map requires rank " + map.getRequiredRank().getTag());
-                        player.sendMessage("");
-                        S.playSound(player, Sound.GLASS);
-                        return;
-                    }
+                        if (!playerInfo.getRank().has(player, map.getRequiredRank(), false)) {
+                            player.sendMessage("");
+                            player.sendMessage("This map requires rank " + map.getRequiredRank().getTag());
+                            player.sendMessage("");
+                            S.playSound(player, Sound.GLASS);
+                            return;
+                        }
 
                     /* Warn that map is being installed */
-                    Bukkit.getServer().broadcastMessage("");
-                    Bukkit.getServer().broadcastMessage(C.red + C.bold + "WARNING: " + C.white + "An adventure map is being installed by " + C.aqua + player.getName());
-                    Bukkit.getServer().broadcastMessage("");
+                        Bukkit.getServer().broadcastMessage("");
+                        Bukkit.getServer().broadcastMessage(C.red + C.bold + "WARNING: " + C.white + "An adventure map is being installed by " + C.aqua + player.getName());
+                        Bukkit.getServer().broadcastMessage("");
 
                     /* All is good, install the map */
-                    map.install();
+                        map.install();
+                    }
                 }
-            }
-        } else if (event.getInventory().getName().equalsIgnoreCase("Plugins")) {
-            S.click(player);
-            event.setCancelled(true);
+            } else if (event.getInventory().getName().equalsIgnoreCase("Plugins")) {
+                S.click(player);
+                event.setCancelled(true);
 
              /* Empty Slot Click */
-            if (event.getCurrentItem() == null) return;
-            if (event.getCurrentItem().getItemMeta() == null) return;
-            if (event.getCurrentItem().getItemMeta().getDisplayName() == null) return;
+                if (event.getCurrentItem() == null) return;
+                if (event.getCurrentItem().getItemMeta() == null) return;
+                if (event.getCurrentItem().getItemMeta().getDisplayName() == null) return;
 
             /* Home Page Icon */
-            if (event.getCurrentItem().getType() == Material.ARROW) {
-                player.openInventory(this.homePage);
-                return;
-            }
+                if (event.getCurrentItem().getType() == Material.ARROW) {
+                    player.openInventory(this.homePage);
+                    return;
+                }
 
             /* Find clicked plugin */
-            for (Plugin plugin : this.plugins) {
+                for (Plugin plugin : this.plugins) {
 
 
-                if (plugin.getItem().getItemMeta().getDisplayName().equalsIgnoreCase(event.getCurrentItem().getItemMeta().getDisplayName())) {
-                    PlayerInfo playerInfo = Core.getInstance().getPlayerInfo(player);
+                    if (plugin.getItem().getItemMeta().getDisplayName().equalsIgnoreCase(event.getCurrentItem().getItemMeta().getDisplayName())) {
+                        PlayerInfo playerInfo = Core.getInstance().getPlayerInfo(player);
 
                     /* Check permissions */
-                    if (!playerInfo.getRank().has(player, plugin.getRequiredRank(), false)) {
-                        player.sendMessage("");
-                        player.sendMessage("This plugin requires rank " + plugin.getRequiredRank().getTag());
-                        player.sendMessage("");
-                        S.playSound(player, Sound.GLASS);
-                        return;
-                    }
+                        if (!playerInfo.getRank().has(player, plugin.getRequiredRank(), false)) {
+                            player.sendMessage("");
+                            player.sendMessage("This plugin requires rank " + plugin.getRequiredRank().getTag());
+                            player.sendMessage("");
+                            S.playSound(player, Sound.GLASS);
+                            return;
+                        }
 
-                    if (plugin.getInstalled() == InstallState.yes) {
-                        plugin.delete();
+                        if (plugin.getInstalled() == InstallState.yes) {
+                            plugin.delete();
 
-                        S.playSound(Sound.FIREWORK_TWINKLE);
-                        Bukkit.getServer().broadcastMessage("");
-                        F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
-                        F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
-                        Bukkit.getServer().broadcastMessage("");
+                            S.playSound(Sound.FIREWORK_TWINKLE);
+                            Bukkit.getServer().broadcastMessage("");
+                            F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
+                            F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
+                            Bukkit.getServer().broadcastMessage("");
 
-                        updatePluginPage();
-                        return;
-                    } else if (plugin.getInstalled() == InstallState.onRestart) {
-                        plugin.delete();
+                            updatePluginPage();
+                            return;
+                        } else if (plugin.getInstalled() == InstallState.onRestart) {
+                            plugin.delete();
 
-                        S.playSound(Sound.FIREWORK_TWINKLE);
-                        Bukkit.getServer().broadcastMessage("");
-                        F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
-                        F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
-                        Bukkit.getServer().broadcastMessage("");
+                            S.playSound(Sound.FIREWORK_TWINKLE);
+                            Bukkit.getServer().broadcastMessage("");
+                            F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.red + " removed " + C.aqua + plugin.getDisplayName());
+                            F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
+                            Bukkit.getServer().broadcastMessage("");
 
-                        updatePluginPage();
-                        return;
-                    } else {
-                        plugin.install();
+                            updatePluginPage();
+                            return;
+                        } else {
+                            plugin.install();
 
-                        S.playSound(Sound.FIREWORK_TWINKLE);
-                        Bukkit.getServer().broadcastMessage("");
-                        F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.green + " installed " + C.aqua + plugin.getDisplayName());
-                        F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
-                        Bukkit.getServer().broadcastMessage("");
+                            S.playSound(Sound.FIREWORK_TWINKLE);
+                            Bukkit.getServer().broadcastMessage("");
+                            F.broadcast(C.red + C.bold + player.getName() + C.yellow + " has" + C.green + " installed " + C.aqua + plugin.getDisplayName());
+                            F.broadcast("This will take effect after restarting with " + C.aqua + "/stop");
+                            Bukkit.getServer().broadcastMessage("");
 
-                        updatePluginPage();
-                        return;
+                            updatePluginPage();
+                            return;
+                        }
                     }
                 }
             }
@@ -328,7 +325,7 @@ public class PluginManager implements Listener {
         
         /* Maps Button */
         this.homePage.setItem(5, ItemStackFactory.createItem(Material.COMMAND, C.yellow + "Server Properties"));
-        
+
         
         /* Restart Button */
         this.homePage.setItem(8, ItemStackFactory.createItem(Material.LAVA_BUCKET, C.red + C.bold + "SHUTDOWN SERVER"));
