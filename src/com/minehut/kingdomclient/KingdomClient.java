@@ -1,14 +1,17 @@
 package com.minehut.kingdomclient;
 
+import com.google.gson.Gson;
 import com.minehut.core.util.common.chat.C;
 import com.minehut.core.util.common.chat.F;
 import com.minehut.core.util.common.sound.S;
+import com.minehut.daemon.Kingdom;
 import com.minehut.kingdomclient.commands.*;
 import com.minehut.kingdomclient.managers.CheatManager;
 import com.minehut.kingdomclient.managers.CommandMonitor;
 import com.minehut.kingdomclient.managers.PluginManager;
 
 import com.minehut.kingdomclient.status.KingdomStatusUploader;
+import com.minehut.kingdomclient.util.JsonUtils;
 import org.apache.commons.io.FileUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
@@ -81,7 +84,7 @@ public class KingdomClient extends JavaPlugin implements Listener {
         this.motd = this.getServer().getMotd();
 
         /* Upload Status */
-        this.kingdomStatusUploader = new KingdomStatusUploader(this);
+//        this.kingdomStatusUploader = new KingdomStatusUploader(this);
     }
 
     @Override
@@ -118,15 +121,27 @@ public class KingdomClient extends JavaPlugin implements Listener {
     }
 
     private void loadConfig() {
-        getConfig().options().copyDefaults(true);
-        saveDefaultConfig();
 
-        this.ownerName = getConfig().getString("owner-name");
-        this.ownerUUID = UUID.fromString(getConfig().getString("owner-uuid"));
-        this.kingdomID = getConfig().getInt("kingdom-id");
-        this.kingdomName = getConfig().getString("kingdom-name");
-        this.featured = getConfig().getBoolean("featured");
-        this.desc = getConfig().getString("desc");
+        Gson gson = new Gson();
+
+        Kingdom kingdom = gson.fromJson(JsonUtils.convertFileToJSON("data.json"), Kingdom.class);
+        this.ownerUUID = UUID.fromString(kingdom.getOwner().playerUUID);
+        this.ownerName = ownerUUID.toString();
+        this.kingdomID = kingdom.id;
+        this.kingdomName = kingdom.getName();
+        this.featured = false; //todo
+
+
+
+//                getConfig().options().copyDefaults(true);
+//        saveDefaultConfig();
+//
+//        this.ownerName = getConfig().getString("owner-name");
+//        this.ownerUUID = UUID.fromString(getConfig().getString("owner-uuid"));
+//        this.kingdomID = getConfig().getInt("kingdom-id");
+//        this.kingdomName = getConfig().getString("kingdom-name");
+//        this.featured = getConfig().getBoolean("featured");
+//        this.desc = getConfig().getString("desc");
     }
 
     @EventHandler
@@ -134,6 +149,7 @@ public class KingdomClient extends JavaPlugin implements Listener {
         if (event.getPlayer().getUniqueId().toString().equalsIgnoreCase(this.ownerUUID.toString())) {
             Player player = event.getPlayer();
             player.setOp(true);
+            this.ownerName = player.getName();
 
             this.getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
 
